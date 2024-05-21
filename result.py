@@ -64,10 +64,10 @@ try:
     darblapa = darba_grāmata.active
     iepriekšējā_cena = darblapa.cell(row=darblapa.max_row, column=2).value
 except FileNotFoundError:
-    print('Iepriekšējā cenu nevar nolasīt, pirmo reizi izpildot programmu.')
+    print('The previous price cannot be read when running the program for the first time.')
 
 
-vienu_skaits = float(input('Ievadiet injekciju vienību skaitu, kas jums pieder: '))
+vienu_skaits = float(input('Enter the number of Injective coin units you own: '))
 
 profit_loss = aprēķinat_profitu_zaudējumu(pašreizējā_cena, vienu_skaits, iepriekšējā_cena)
 
