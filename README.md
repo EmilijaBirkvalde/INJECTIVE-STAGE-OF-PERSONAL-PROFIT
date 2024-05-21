@@ -1,6 +1,6 @@
 # PERSONAL PROJECT NO. 1
 ## INJECTIVE-STAGE-OF-PERSONAL-PROFIT
-stage of profit or loss of cryptocurrency Injective at a given moment in relation to your personal crypto wallet or the coins you own
+Stage of profit or loss of cryptocurrency Injective at a given moment in relation to your personal crypto wallet or the coins you own
 
 ### Task:
 You need to create a program code that will read the required information from the website and save the relevant data in an Excel file. The information read below should be used for the calculation, the result of which will also be saved in an Excel file table. The code only needs to perform the action once after it is run. A website that generates real-time value of "Injective" cryptocurrency is chosen. This value should be read from the opened homepage and saved in an Excel file table by recording the date and time. When this is done, the fixed price is considered the current "Injective" unit price. Next, a calculation must be made that will reflect my profit or loss. Accordingly, the program requires you to enter the number of "Injective" currency units you own, where, using the previously fixed value, your current profit/loss is calculated. Note that when you run the code for the first time, the previous value will not be fixed, but only the current one, so this should also be specified in the code lines themselves, so as not to generate redundant error messages. The next time you run the code, the previous value will already be available in the Excel file.
@@ -25,6 +25,9 @@ Link: https://www.diadata.org/app/price/asset/Ethereum/0xe28b3B32B6c345A34Ff6467
 2. Openpyxl library. This library is used to read/write Excel 2010 xlsx/xlsm/xltx/xltm files. In our case, the data read by the program was saved/written to an xlsx file with the help of this library. This library was then used to read the information previously stored in the same xlsx file so that calculations could be performed. After the calculations were made, the data calculated with the help of this library were recorded and recorded in an Excel file.
 3. Python datetime library. We captured the date and time with the help of this library.
 4. Python time library. Provides a variety of functions for working with time-related activities. In our case, it was used to give the program the necessary time to perform an action before the software moves on to the next step.
+
+> [!IMPORTANT]
+> The code creation took place on the VS code platform, as the selenium library was used, which could not access the chromedriver paths through the github site.
 
 ## Program development description:
 1. Required libraries are imported.
